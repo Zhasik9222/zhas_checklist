@@ -23,4 +23,6 @@ function add_new_item() {
     main_to_do_items_container.append(div_list);
     div_list.append(new_checkbox);
     div_list.append(new_item);
+
+    input.value = null;
 }
