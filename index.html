@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZhasList_Website</title>
+</head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans&family=Oswald&family=Rubik&family=Rubik+Iso&family=Ubuntu&display=swap');
+* {
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Rubik', sans-serif; */
+    /* font-family: 'Noto Sans', sans-serif; */
+    /* font-family: 'Oswald', sans-serif; */
+
+    padding: 0;
+    margin: 0;
+}
+    body {
+  background-color: rgb(102, 102, 102);
+}
+body .main_content_container {
+  margin-top: 100px;
+}
+body .main_content_input_and_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body .input_and_btn_container {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+body .input_container {
+  width: 75%;
+}
+body .input_container .input {
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+body .submit_btn_container {
+  width: 20%;
+}
+body .submit_btn_container .submit_btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  height: 100%;
+  width: 70%;
+  color: white;
+  background: linear-gradient(to bottom right, red, blue);
+}
+body .submit_btn_container .submit_btn:hover {
+  background: linear-gradient(to bottom right, blue, red);
+}
+body .list_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+body .list_container .items_to_do_container {
+  width: 40%;
+}
+body .list_container li {
+  list-style: none;
+  color: white;
+  font-size: 21px;
+  margin: 0px 0px 0px 10px;
+}
+
+footer {
+  height: 150px;
+  margin-top: 500px;
+  border-top: 2px solid white;
+  display: flex;
+  align-items: center;
+}
+footer .footer_container {
+  padding-left: 50px;
+}
+footer .footer_container .author_text {
+  margin-bottom: 15px;
+  color: white;
+  font-size: 20px;
+}
+footer .footer_container .year_text {
+  color: white;
+  font-size: 20px;
+}
+  </style>
+<body>
+    <div class="main_content_container">
+        <div class="main_content_input_and_btn">
+            <div class="input_and_btn_container">
+                <div class="input_container">
+                    <input class="input" type="text" placeholder="Введите новое дело">
+                </div>
+                <div class="submit_btn_container">
+                    <button class="submit_btn">Принять</button>
+                </div>
+            </div>
+        </div>
+        <div class="list_container">
+            <div class="items_to_do_container">
+                <ul class="main_ul">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <p class="author_text">Author: OVER_GALAXY</p>
+            <p class="year_text">@2023 OVER_GALAXY</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>       
+</body>
+</html>
